@@ -21,6 +21,7 @@ public class yelpEndpoint {
     @Autowired
     GoogleVisionService googleVisionService;
 
+    //Yelp id is the id of whichever restaurant you want to test
     @GetMapping("review/{yelpId}")
     public Object getReviewData(@PathVariable("yelpId") String yelpId) throws IOException {
 
